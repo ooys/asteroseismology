@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Large Datasets
+data/allsites-alldata-waverage-fill.fits
+data/allsites-waverage-quality.fits
