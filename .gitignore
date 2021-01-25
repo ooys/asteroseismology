@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Large Datasets
+data/SN_d_tot_V2.0.csv
+data/SN_ms_tot_V2.0.csv
