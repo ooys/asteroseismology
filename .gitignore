@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # Large Datasets
-data/SN_d_tot_V2.0.csv
-data/SN_ms_tot_V2.0.csv
+data/allsites-alldata-waverage-fill.fits
+data/allsites-waverage-quality.fits
