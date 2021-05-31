@@ -4,6 +4,19 @@ import * as THREE from "three";
 
 function Sun() {
     useEffect(() => {
+        const _VS = `
+        uniform float u_time;
+            void main(){
+                gl_Position = projectionMatrix * modelViewMatrix* vec4(position,1.0);
+            }
+        `;
+        const _FS = `
+        uniform float u_time;
+            void main(){
+                gl_FragColor = vec4(0.0,1.0,0.5,1.0);
+            }
+        `;
+
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(
             75,
@@ -17,14 +30,18 @@ function Sun() {
         });
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(window.innerWidth, window.innerHeight);
-        camera.position.setZ(30);
-        camera.position.setX(-3);
+        camera.position.setZ(2);
+        camera.position.setX(0);
         renderer.render(scene, camera);
 
-        const geometry = new THREE.SphereGeometry(10, 100, 100);
-        const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
+        const geometry = new THREE.SphereBufferGeometry(1, 50, 50);
+
+        const uniforms = {};
+        uniforms.u_time = { value: 0.0 };
+
         const material2 = new THREE.ShaderMaterial({
-            // fragmentShader: "/components/shaders/Fragment.glsl".textContent,
+            vertexShader: _VS,
+            fragmentShader: _FS,
         });
         const torus = new THREE.Mesh(geometry, material2);
 
