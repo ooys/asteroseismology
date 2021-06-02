@@ -58,7 +58,7 @@ function Sun() {
         // const pointLight = new THREE.PointLight(0xffffff);
         // pointLight.position.set(5, 5, 5);
 
-        const ambientLight = new THREE.AmbientLight(0xffffff);
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0);
         scene.add(ambientLight);
 
         // Scrolling Animation
@@ -67,9 +67,17 @@ function Sun() {
             const frame = -t / window.innerHeight;
             console.log(frame);
             if (frame <= 1) {
-                camera.position.x = camX + frame * -0.0;
+                camera.position.x = camX + frame * 0.1;
                 camera.position.y = camY + frame * 0.2;
                 camera.position.z = camZ + frame * 5;
+                camera.rotation.y = frame * -0.1;
+                ambientLight.intensity = frame * 2;
+            }
+            if (frame > 1 && frame <= 2) {
+                camera.position.x = camX + 0.1 + (frame - 1) * 0.2;
+                camera.position.y = camY + 0.2 + (frame - 1) * -0.5;
+                camera.position.z = camZ + 5 + (frame - 1) * -3;
+                camera.rotation.y = -0.1 + (frame - 1) * -0.8;
             }
         }
         document.body.onscroll = moveOnScroll;
