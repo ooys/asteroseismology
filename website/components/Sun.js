@@ -4,6 +4,7 @@ import * as THREE from "three";
 
 function Sun() {
     useEffect(() => {
+        // Rendering Canvas
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(
             75,
@@ -15,41 +16,83 @@ function Sun() {
             canvas: document.querySelector("#sun_canvas"),
         });
 
-        // controls = new THREE.OrbitControls(camera, renderer.domElement);
-
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(window.innerWidth, window.innerHeight);
-        camera.position.setZ(2);
-        camera.position.setX(0);
+
+        // Camera Settings
+        const camX = -1.2;
+        const camY = 0.5;
+        const camZ = 1;
+        camera.position.set(camX, camY, camZ);
+
         renderer.render(scene, camera);
 
-        const geometry = new THREE.SphereBufferGeometry(1, 100, 100);
-        // const material = new THREE.MeshBasicMaterial({
-        //     color: 0xffffff,
-        //     wireframe: true,
-        // });
+        // Object Settings
+        const sunGeometry = new THREE.SphereBufferGeometry(1, 100, 100);
         const sunTexture = new THREE.TextureLoader().load("/images/sun.jpeg");
-        const material2 = new THREE.MeshBasicMaterial({
+        const sunMaterial = new THREE.MeshBasicMaterial({
             map: sunTexture,
             wireframe: false,
         });
-
-        const sun = new THREE.Mesh(geometry, material2);
-
+        const sun = new THREE.Mesh(sunGeometry, sunMaterial);
         scene.add(sun);
-        const pointLight = new THREE.PointLight(0xffffff);
-        pointLight.position.set(5, 5, 5);
+
+        function addStar() {
+            const starGeometry = new THREE.SphereBufferGeometry(0.25, 24, 24);
+            const starMaterial = new THREE.MeshStandardMaterial({
+                color: 0xffffff,
+            });
+            const star = new THREE.Mesh(starGeometry, starMaterial);
+            const [x, y, z] = Array(3)
+                .fill()
+                .map(() => THREE.MathUtils.randFloatSpread(200));
+            star.position.set(x, y, z);
+            scene.add(star);
+            // const light = new THREE.PointLight(0xffffff, 1, 200);
+            // light.position.set(x, y, z);
+            // scene.add(light);
+        }
+        Array(1000).fill().forEach(addStar);
+
+        // Lighting Settings
+        // const pointLight = new THREE.PointLight(0xffffff);
+        // pointLight.position.set(5, 5, 5);
 
         const ambientLight = new THREE.AmbientLight(0xffffff);
         scene.add(ambientLight);
 
+        // Scrolling Animation
+        function moveOnScroll() {
+            const t = document.body.getBoundingClientRect().top;
+            const frame = -t / window.innerHeight;
+            console.log(frame);
+            if (frame <= 1) {
+                camera.position.x = camX + frame * -0.0;
+                camera.position.y = camY + frame * 0.2;
+                camera.position.z = camZ + frame * 5;
+            }
+        }
+        document.body.onscroll = moveOnScroll;
+        // document.getElementsByClassName("section").onscroll = moveOnScroll;
+
+        // Animation Settings
         function animate() {
             requestAnimationFrame(animate);
 
+            // Update Camera Screen Ratio
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+
+            // Update Object
             sun.rotation.x += 0.001;
             sun.rotation.y += 0.002;
             sun.rotation.z += 0.001;
-            // controls.update();
+
+            // Update Camera
+            // camera.position.z += 0.002;
+
+            // Rerender
             renderer.render(scene, camera);
         }
         animate();
@@ -57,11 +100,7 @@ function Sun() {
         //renderer.render(scene, camera);
     });
 
-    return (
-        <>
-            <canvas id="sun_canvas"></canvas>
-        </>
-    );
+    return <canvas id="sun_canvas"></canvas>;
 }
 
 export default Sun;
