@@ -2,6 +2,7 @@ import Sun from "/components/Sun.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
+import Navbar from "/components/Navbar.js";
 
 function Home() {
     const router = useRouter();
@@ -10,7 +11,8 @@ function Home() {
             <Sun />
             <div className="wrapper">
                 <div className="tracker">
-                    <div className="section is-large">
+                    <Navbar />
+                    <div className="section is-large" id="background">
                         <div className="columns">
                             <div className="column is-mobile">
                                 <div className="header">
@@ -42,8 +44,8 @@ function Home() {
                             <div className="column"></div>
                         </div>
                     </div>
-                    <div className="section is-large">
-                        <div className="header">
+                    <div className="section is-large" id="purpose">
+                        <div className="header centered">
                             <div className="title centered">
                                 "Hearing" Stars
                             </div>
@@ -53,20 +55,27 @@ function Home() {
                             <br className="is-hidden-touch"></br>
                             <br className="is-hidden-touch"></br>
                             <br className="is-hidden-touch"></br>
-                            <div className="subtitle centered">
+                            <a
+                                className="subtitle centered"
+                                onClick={() => router.push("/solar-activity")}>
                                 Across the Universe.
-                            </div>
+                                <span className="icon">
+                                    <FontAwesomeIcon
+                                        className="chevron fa-xs"
+                                        icon={faChevronRight}></FontAwesomeIcon>
+                                </span>
+                            </a>
                         </div>
                     </div>
-                    <div className="section is-large">
+                    <div className="section is-large" id="method">
                         <div>Our Techniques</div>
                     </div>
 
-                    <div className="section is-large">
+                    <div className="section is-large" id="results">
                         <div>Our Results</div>
                     </div>
 
-                    <div className="section is-large">
+                    <div className="section is-large" id="contacts">
                         <div>Data and Collaborations</div>
                     </div>
                 </div>
