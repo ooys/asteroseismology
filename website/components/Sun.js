@@ -93,9 +93,9 @@ function Sun() {
             renderer.setSize(window.innerWidth, window.innerHeight);
 
             // Update Object
-            sun.rotation.x += 0.001;
+            sun.rotation.x += -0.001;
             sun.rotation.y += 0.002;
-            sun.rotation.z += 0.001;
+            sun.rotation.z += 0.0005;
 
             // Update Camera
             // camera.position.z += 0.002;

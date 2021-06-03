@@ -30,10 +30,38 @@ body::-webkit-scrollbar {
 
 .wrapper .section {
     color: var(--text-color);
-    border-style: dotted;
+    /* border-style: dotted;
     border-width: 2px;
-    border-color: white;
+    border-color: white; */
     width: 100vw;
     height: 100vh;
     /* scroll-snap-align: start; */
+}
+
+/* Text */
+.title {
+    color: white;
+    font-size: 12vh;
+}
+.subtitle {
+    color: white;
+    font-size: 6vh;
+}
+.header {
+    margin-top: -5vw;
+}
+.chevron {
+    color: orange;
+}
+
+.subtitle:hover {
+    color: orange;
+}
+
+.description {
+    color: white;
+    font-size: 3vh;
+}
+.centered {
+    text-align: center;
 }
