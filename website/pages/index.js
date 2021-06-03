@@ -21,7 +21,7 @@ function Home() {
                                     <a
                                         className="subtitle"
                                         onClick={() =>
-                                            router.push("/solar-activity")
+                                            router.push("/background")
                                         }>
                                         And why we should care. {"      "}
                                         <span className="icon">

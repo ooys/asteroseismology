@@ -42,6 +42,7 @@ body::-webkit-scrollbar {
 .nav {
     text-align: center;
     position: fixed;
+    z-index: 3;
 }
 .nav .columns {
     width: 70vw;
@@ -70,11 +71,11 @@ body::-webkit-scrollbar {
 }
 
 /* Text */
-.title {
+.section .title {
     color: white;
     font-size: 12vh;
 }
-.subtitle {
+.section .subtitle {
     color: white;
     font-size: 6vh;
 }
@@ -96,4 +97,27 @@ body::-webkit-scrollbar {
 }
 .centered {
     text-align: center;
+}
+
+/* Page Text */
+
+.text-wrapper {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    opacity: 0.95;
+}
+.text-wrapper .title {
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+.text-wrapper p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    color: black;
 }
