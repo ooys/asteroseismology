@@ -16,16 +16,17 @@ function Home() {
                                 <div className="header">
                                     <div className="title">Solar Activity</div>
                                     <hr></hr>
-                                    <a className="subtitle">
+                                    <a
+                                        className="subtitle"
+                                        onClick={() =>
+                                            router.push("/solar-activity")
+                                        }>
                                         And why we should care. {"      "}
                                         <span className="icon">
                                             <FontAwesomeIcon
                                                 className="chevron fa-xs"
-                                                icon={faChevronRight}
-                                                onClick={() =>
-                                                    router.push(
-                                                        "/solar-activity"
-                                                    )
+                                                icon={
+                                                    faChevronRight
                                                 }></FontAwesomeIcon>
                                         </span>
                                     </a>
