@@ -65,7 +65,6 @@ function Sun() {
         function moveOnScroll() {
             const t = document.body.getBoundingClientRect().top;
             const frame = -t / window.innerHeight;
-            console.log(frame);
             if (frame <= 1) {
                 camera.position.x = camX + frame * 0.1;
                 camera.position.y = camY + frame * 0.2;

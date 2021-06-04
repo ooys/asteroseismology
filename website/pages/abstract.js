@@ -5,7 +5,7 @@ function Abstract() {
     return (
         <div className="abstract">
             <Sun />
-            <Navbar />
+            <Navbar back="true" />
             <div className="text-wrapper">
                 <div className="title">Abstract</div>
                 <p>

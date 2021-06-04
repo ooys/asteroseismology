@@ -11,7 +11,7 @@ function Home() {
             <Sun />
             <div className="wrapper">
                 <div className="tracker">
-                    <Navbar />
+                    <Navbar back="false" />
                     <div className="section is-large" id="background">
                         <div className="columns">
                             <div className="column is-mobile">
@@ -58,7 +58,7 @@ function Home() {
                             <a
                                 className="subtitle centered"
                                 onClick={() => router.push("/solar-activity")}>
-                                Across the Universe.
+                                Across the Universe.{"      "}
                                 <span className="icon">
                                     <FontAwesomeIcon
                                         className="chevron fa-xs"
