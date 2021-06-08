@@ -80,7 +80,6 @@ function Hidden({ active }) {
 
 function Navbar({ back }) {
     const router = useRouter();
-    console.log({ back });
     return (
         <div className="nav is-hidden-touch">
             <div className="columns">

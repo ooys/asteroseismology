@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 import Navbar from "/components/Navbar.js";
+import Footer from "/components/Footer.js";
 
 function Home() {
     const router = useRouter();
@@ -37,7 +38,8 @@ function Home() {
                                 <br></br>
                                 <div className="description">
                                     <div>Astrophysics Research Project</div>
-                                    <div>Yihong Song, Rohit Prasanna</div>
+                                    <div>Yihong Song, Rohit Prasanna (US)</div>
+                                    <div>Narim Kim, Haesol Yoon (KR)</div>
                                     <div>June, 2021</div>
                                 </div>
                             </div>
@@ -79,6 +81,7 @@ function Home() {
                         <div>Data and Collaborations</div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </>
     );

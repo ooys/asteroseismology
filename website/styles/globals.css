@@ -70,6 +70,22 @@ body::-webkit-scrollbar {
     border-top: 1px solid white;
 }
 
+/* Footer */
+.footer_wrapper {
+    position: absolute;
+    left: -10vw;
+}
+.footer {
+    background-color: #363636;
+    position: absolute;
+    right: 0;
+    bottom: -20vw;
+    left: 0;
+    z-index: 2;
+    height: 20vw;
+    width: 100vw;
+}
+
 /* Text */
 .section .title {
     color: white;
@@ -98,7 +114,6 @@ body::-webkit-scrollbar {
 .centered {
     text-align: center;
 }
-
 /* Page Text */
 
 .text-wrapper {
@@ -106,6 +121,7 @@ body::-webkit-scrollbar {
     margin-left: 10vw;
     margin-top: 10vw;
     margin-bottom: 5vw;
+    padding-bottom: 10vw;
     position: absolute;
     z-index: 2;
     background-color: white;
@@ -115,9 +131,26 @@ body::-webkit-scrollbar {
     margin-left: 5vw;
     margin-top: 5vw;
 }
+.text-wrapper .subtitle {
+    color: #363636;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.125;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
 .text-wrapper p {
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 5vw;
     color: black;
+}
+.youtube {
+    width: 50vw;
+    height: 30vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.video_title {
+    text-align: center;
 }

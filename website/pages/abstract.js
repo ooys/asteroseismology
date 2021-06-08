@@ -1,5 +1,6 @@
 import Navbar from "/components/Navbar.js";
 import Sun from "/components/Sun.js";
+import Footer from "/components/Footer.js";
 
 function Abstract() {
     return (
@@ -45,6 +46,9 @@ function Abstract() {
                     machine learning model improves prediction accuracy and
                     provides scalability when compared to present methods.
                 </p>
+                <div className="footer_wrapper">
+                    <Footer />
+                </div>
             </div>
         </div>
     );
