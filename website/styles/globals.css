@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
 /* Navbar */
 .nav {
     text-align: center;
-    position: fixed;
+    position: absolute;
     z-index: 3;
 }
 .nav .columns {
@@ -76,14 +76,35 @@ body::-webkit-scrollbar {
     left: -10vw;
 }
 .footer {
-    background-color: #363636;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
     position: absolute;
     right: 0;
-    bottom: -20vw;
+    bottom: -25rem;
     left: 0;
     z-index: 2;
-    height: 20vw;
     width: 100vw;
+    border: none;
+    border-top: 1px solid white;
+}
+.footer .footer_title {
+    color: white;
+    font-weight: bold;
+    font-size: 3.5vw;
+}
+.footer .footer_subtitle {
+    color: white;
+    font-size: 1rem;
+}
+.footer a {
+    color: white;
+    font-size: 2rem;
+    margin-left: 1vw;
+    margin-right: 2rem;
+}
+.footer a:hover {
+    color: orange;
+    transition: all 0.3s;
 }
 
 /* Text */
@@ -121,11 +142,10 @@ body::-webkit-scrollbar {
     margin-left: 10vw;
     margin-top: 10vw;
     margin-bottom: 5vw;
-    padding-bottom: 10vw;
+    /* padding-bottom: 10vw; */
     position: absolute;
     z-index: 2;
-    background-color: white;
-    opacity: 0.95;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 .text-wrapper .title {
     margin-left: 5vw;
@@ -153,4 +173,70 @@ body::-webkit-scrollbar {
 }
 .video_title {
     text-align: center;
+}
+
+/* About */
+.about .profiles {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 2rem;
+}
+
+.is-profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3rem;
+    transition: all 0.5s;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: white;
+}
+
+.is-profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2),
+        0 24px 80px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s;
+}
+
+.is-profile-text {
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.is-profile-text .is-profile-name {
+    font-size: 1.6rem;
+    color: black;
+    margin-top: 1rem;
+}
+.is-profile-text .is-profile-position {
+    font-size: 1.2rem;
+    color: #363636;
+    margin-top: 0.2rem;
+}
+.is-profile-text .is-profile-origin {
+    font-size: 1rem;
+    color: #363636;
+    margin-top: 1.2rem;
+}
+.is-profile-text .is-profile-location {
+    font-size: 1rem;
+    color: #363636;
+    margin-top: 0.3rem;
+}
+
+.is-profile-contact {
+    margin-top: 1rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+.is-profile-contact a {
+    color: black;
+}
+
+.is-profile-contact a:hover {
+    color: orange;
+    transition: all 0.3s;
 }

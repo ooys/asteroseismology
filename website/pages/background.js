@@ -6,7 +6,7 @@ function Background() {
     return (
         <div className="background">
             <Sun />
-            <Navbar back="false" />
+            <Navbar back="true" />
             <div className="text-wrapper">
                 <div className="title">Background</div>
                 <p>

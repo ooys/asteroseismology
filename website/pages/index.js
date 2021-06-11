@@ -59,7 +59,7 @@ function Home() {
                             <br className="is-hidden-touch"></br>
                             <a
                                 className="subtitle centered"
-                                onClick={() => router.push("/solar-activity")}>
+                                onClick={() => router.push("/background")}>
                                 Across the Universe.{"      "}
                                 <span className="icon">
                                     <FontAwesomeIcon

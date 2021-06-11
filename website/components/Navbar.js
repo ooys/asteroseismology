@@ -34,22 +34,12 @@ function Hidden({ active }) {
                 <Link
                     className="column"
                     activeClass="active"
-                    to="background"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={1000}>
-                    Background
-                </Link>
-                <Link
-                    className="column"
-                    activeClass="active"
                     to="purpose"
                     spy={true}
                     smooth={true}
                     offset={0}
                     duration={1000}>
-                    Purpose
+                    Background
                 </Link>
                 <Link
                     className="column"
@@ -71,10 +61,40 @@ function Hidden({ active }) {
                     duration={1000}>
                     Results
                 </Link>
+                <Link
+                    className="column"
+                    activeClass="active"
+                    to="contacts"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1000}>
+                    Contact Us
+                </Link>
             </>
         );
     } else {
-        return <></>;
+        return (
+            <>
+                <a className="column" onClick={() => router.push("/abstract")}>
+                    Abstract
+                </a>
+                <a
+                    className="column"
+                    onClick={() => router.push("/background")}>
+                    Background
+                </a>
+                <a className="column" onClick={() => router.push("/method")}>
+                    Method
+                </a>
+                <a className="column" onClick={() => router.push("/results")}>
+                    Results
+                </a>
+                <a className="column" onClick={() => router.push("/about")}>
+                    Contact Us
+                </a>
+            </>
+        );
     }
 }
 
@@ -86,16 +106,6 @@ function Navbar({ back }) {
                 <Back active={back} />
 
                 <Hidden active={back} />
-                <Link
-                    className="column"
-                    activeClass="active"
-                    to="contacts"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={1000}>
-                    Contact Us
-                </Link>
             </div>
             <hr></hr>
         </div>
