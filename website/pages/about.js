@@ -21,7 +21,7 @@ function About() {
                             origin="Riverside High School & Academies of Loudoun '22"
                             location="Ashburn, Virginia, United States"
                             picture="/images/profile/y_song.jpg"
-                            email="1036566@lcps.org"
+                            email="michaelsong4399@gmail.com"
                             discord="michaelsong4399#2750"
                             github="https://github.com/michaelsong4399"
                         />
@@ -31,7 +31,7 @@ function About() {
                             origin="Briar Woods High School & Academies of Loudoun '22"
                             location="Ashburn, Virginia, United States"
                             picture="/images/profile/r_prasanna.png"
-                            email="837329@lcps.org"
+                            email="rohit.prasanna1@gmail.com"
                             discord="goopfrey#3844"
                             github="https://github.com/ropunch04"
                         />
@@ -41,9 +41,9 @@ function About() {
                             origin="Daegu Science High School '22"
                             location="Daegu, South Korea"
                             picture="/images/profile/n_kim.png"
-                            email="1036566@lcps.org"
-                            discord="michaelsong4399#2750"
-                            github="https://github.com/michaelsong4399"
+                            email="artkim817@gmail.com"
+                            // discord="michaelsong4399#2750"
+                            // github="https://github.com/michaelsong4399"
                         />
                         <Profile
                             name="Haesol Yoon"
@@ -51,8 +51,8 @@ function About() {
                             origin="Daegu Science High School '22"
                             location="Daegu, South Korea"
                             picture="/images/profile/h_yoon.png"
-                            email="837329@lcps.org"
-                            discord="goopfrey#3844"
+                            email="hsyoon629@gmail.com"
+                            // discord="goopfrey#3844"
                         />
                     </div>
                 </div>
