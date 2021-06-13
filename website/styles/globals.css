@@ -150,6 +150,7 @@ body::-webkit-scrollbar {
 .text-wrapper .title {
     margin-left: 5vw;
     margin-top: 5vw;
+    margin-bottom: 2vw;
 }
 .text-wrapper .subtitle {
     color: #363636;
@@ -182,7 +183,11 @@ body::-webkit-scrollbar {
 
 .background-picture {
     width: 30vw;
-    min-width: 20rem;
+    min-width: 15rem;
+}
+
+.is-small {
+    width: 20vw;
 }
 
 .is-large {
