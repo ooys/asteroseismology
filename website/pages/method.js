@@ -2,7 +2,7 @@ import Navbar from "/components/Navbar.js";
 import Sun from "/components/Sun.js";
 import Footer from "/components/Footer.js";
 
-function Background() {
+function Method() {
     return (
         <div className="background">
             <Sun />
@@ -64,4 +64,4 @@ function Background() {
     );
 }
 
-export default Background;
+export default Method;
