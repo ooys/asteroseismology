@@ -44,31 +44,6 @@ function Background() {
             <Navbar back="true" />
             <div className="text-wrapper">
                 <div className="title">Background</div>
-                <div className="text-content">
-                    Our universe is far from the quiet, dark, mysterious place
-                    it may appear to be. Every single star we see in the night
-                    sky is, In fact, loud. Stars are very large bubbles of hot
-                    gas driven by convection processes due to the movement of
-                    hot and cold gases. These convection currents cause
-                    differences in pressure and temperature throughout the star,
-                    causing oscillation waves throughout the star’s interior.
-                    Depending on the pressure/temperature, the oscillations
-                    operate at different frequencies and create various pitches.
-                    We humans are not able to directly hear this sound, but we
-                    are capable of viewing byproducts of the sound-causing
-                    oscillations - the luminosity and surface velocity of the
-                    star.
-                </div>
-                <iframe
-                    className="youtube"
-                    src="https://www.youtube.com/embed/H-Ci_YwfH04"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen></iframe>
-                <div className="media-title">
-                    The Sound of Stars - NASA, 2019
-                </div>
                 <div className="subtitle">
                     Stellar Activity: Dependent Variable
                 </div>
@@ -128,11 +103,16 @@ function Background() {
                     oscillations - the luminosity and surface velocity of the
                     star.
                 </div>
-
-                <Picture
-                    rawpicture="/images/background/oscillation.gif"
-                    name="Star Energy Oscillations"
-                />
+                <iframe
+                    className="youtube"
+                    src="https://www.youtube.com/embed/H-Ci_YwfH04"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen></iframe>
+                <div className="media-title">
+                    The Sound of Stars - NASA, 2019
+                </div>
 
                 <div className="subtitle">
                     Energy Oscillation: Detection Methods
@@ -149,6 +129,11 @@ function Background() {
                     aspect of a star, we are constrained to only collecting data
                     from the Sun.
                 </div>
+                <Picture
+                    rawpicture="/images/background/oscillation.gif"
+                    name="Star Energy Oscillations"
+                    size="is-small"
+                />
                 <div className="text-content">
                     To determine the internal oscillations of distant stars, we
                     must rely on luminosity - a measure of the intrinsic
