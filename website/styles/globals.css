@@ -157,12 +157,12 @@ body::-webkit-scrollbar {
     font-weight: 600;
     line-height: 1.125;
     margin-left: 5vw;
-    margin-top: 5vw;
+    margin-top: 3vw;
 }
-.text-wrapper p {
+.text-wrapper .text-content {
     margin-left: 5vw;
     margin-right: 5vw;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
     color: black;
 }
 .youtube {
@@ -171,8 +171,22 @@ body::-webkit-scrollbar {
     margin-left: 15vw;
     margin-right: 15vw;
 }
-.video_title {
+.media-title {
     text-align: center;
+}
+
+.picture-frame {
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+.background-picture {
+    width: 30vw;
+    min-width: 20rem;
+}
+
+.is-large {
+    width: 50vw;
 }
 
 /* About */

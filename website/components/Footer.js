@@ -19,7 +19,7 @@ function Footer() {
                         id="footer-button-email"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="mailto:1036566@lcps.org">
+                        href="mailto:michaelsong4399@gmail.com,rohit.prasanna1@gmail.com">
                         <span className="icon">
                             <FontAwesomeIcon
                                 icon={faEnvelope}></FontAwesomeIcon>

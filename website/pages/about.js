@@ -21,7 +21,7 @@ function About() {
                             origin="Riverside High School & Academies of Loudoun '22"
                             location="Ashburn, Virginia, United States"
                             picture="/images/profile/y_song.jpg"
-                            email="1036566@lcps.org"
+                            email="michaelsong4399@gmail.com"
                             discord="michaelsong4399#2750"
                             github="https://github.com/michaelsong4399"
                         />
@@ -31,7 +31,7 @@ function About() {
                             origin="Briar Woods High School & Academies of Loudoun '22"
                             location="Ashburn, Virginia, United States"
                             picture="/images/profile/r_prasanna.png"
-                            email="837329@lcps.org"
+                            email="rohit.prasanna1@gmail.com"
                             discord="goopfrey#3844"
                             github="https://github.com/ropunch04"
                         />
@@ -40,19 +40,19 @@ function About() {
                             position="Student"
                             origin="Daegu Science High School '22"
                             location="Daegu, South Korea"
-                            // picture="/images/profile/y_song.jpg"
-                            email="1036566@lcps.org"
-                            discord="michaelsong4399#2750"
-                            github="https://github.com/michaelsong4399"
+                            picture="/images/profile/n_kim.png"
+                            email="artkim817@gmail.com"
+                            // discord="michaelsong4399#2750"
+                            // github="https://github.com/michaelsong4399"
                         />
                         <Profile
                             name="Haesol Yoon"
                             position="Student"
                             origin="Daegu Science High School '22"
                             location="Daegu, South Korea"
-                            // picture="/images/profile/r_prasanna.png"
-                            email="837329@lcps.org"
-                            discord="goopfrey#3844"
+                            picture="/images/profile/h_yoon.png"
+                            email="hsyoon629@gmail.com"
+                            // discord="goopfrey#3844"
                         />
                     </div>
                 </div>
@@ -67,6 +67,14 @@ function About() {
                             location="Bures-sur-Yvette, France"
                             picture="/images/profile/t_appourchaux.png"
                             email="thierry.appourchaux@ias.u-psud.fr"
+                        />
+                        <Profile
+                            name="Duke M. Writer"
+                            position="Research Mentor"
+                            origin="Academies of Loudoun"
+                            location="Ashburn, Virginia, United States"
+                            picture="/images/profile/d_writer.png"
+                            email="dwriter@email.virginia.edu"
                         />
                         <Profile
                             name="Jeremy D. Schnittman"
