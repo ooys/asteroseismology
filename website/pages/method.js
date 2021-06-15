@@ -2,7 +2,6 @@ import Navbar from "/components/Navbar.js";
 import Sun from "/components/Sun.js";
 import Footer from "/components/Footer.js";
 import LazyLoad from "react-lazyload";
-import Code from "/components/Code.js";
 
 function Picture({ rawpicture, name, size }) {
     if (rawpicture != null) {
