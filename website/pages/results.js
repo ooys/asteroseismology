@@ -103,6 +103,56 @@ function Results() {
                     research a monumental step forward in the astrophysical and
                     machine learning community.
                 </div>
+                <div className="picture-frame">
+                    <div className="columns is-multiline is-gapless">
+                        <LazyLoad className="column is-one-third" once={true}>
+                            <img
+                                className="background-picture"
+                                src="/images/results/p1.png"
+                                alt="p1"
+                            />
+                        </LazyLoad>
+                        <LazyLoad className="column is-one-third" once={true}>
+                            <img
+                                className="background-picture"
+                                src="/images/results/p2.png"
+                                alt="p2"
+                            />
+                        </LazyLoad>
+                        <LazyLoad className="column is-one-third" once={true}>
+                            <img
+                                className="background-picture"
+                                src="/images/results/p3.png"
+                                alt="p3"
+                            />
+                        </LazyLoad>
+                        <LazyLoad className="column is-one-third" once={true}>
+                            <img
+                                className="background-picture"
+                                src="/images/results/p4.png"
+                                alt="p4"
+                            />
+                        </LazyLoad>
+                        <LazyLoad className="column is-one-third" once={true}>
+                            <img
+                                className="background-picture"
+                                src="/images/results/p5.png"
+                                alt="p5"
+                            />
+                        </LazyLoad>
+                        <LazyLoad className="column is-one-third" once={true}>
+                            <img
+                                className="background-picture"
+                                src="/images/results/p6.png"
+                                alt="p6"
+                            />
+                        </LazyLoad>
+                    </div>
+                    <div className="media-title">
+                        Stellar Activity - Rotationally Variable Stars (top),
+                        Hot Subdwarf Stars (bottom)
+                    </div>
+                </div>
                 <div className="footer_wrapper">
                     <Footer />
                 </div>
