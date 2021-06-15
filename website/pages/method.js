@@ -2,6 +2,7 @@ import Navbar from "/components/Navbar.js";
 import Sun from "/components/Sun.js";
 import Footer from "/components/Footer.js";
 import LazyLoad from "react-lazyload";
+import Code from "/components/Code.js";
 
 function Picture({ rawpicture, name, size }) {
     if (rawpicture != null) {
@@ -50,10 +51,84 @@ function Method() {
                     <br></br>
                     We imported the following libraries to aid us in creating
                     the machine learning model and quickly accomplish difficult
-                    tasks: Lightkurve + Comments explaining what it does
-                    Tensorflow + Comments... Matplotlib + comment Numpy + cmt
-                    Sklearn + c
+                    tasks.
                 </div>
+                <pre className="codeblock">
+                    <code className="code">
+                        <span className="python-system">import</span> lightkurve{" "}
+                        <span className="python-system">as</span> lk{" "}
+                        <span className="comment">
+                            # Analyzes time series data of astronomical objects
+                            (Stars and Planets)
+                        </span>
+                    </code>
+                    <br></br>
+                    <code className="code">
+                        <span className="python-system">import</span> tensorflow{" "}
+                        <span className="python-system">as</span> tf{" "}
+                        <span className="comment">
+                            # A robust Machine Learning framework for easy
+                            deployment
+                        </span>
+                    </code>
+                    <br></br>
+                    <code className="code">
+                        <span className="python-system">import</span> matplotlib{" "}
+                        <span className="python-system">as</span> plt{" "}
+                        <span className="comment">
+                            # Produces graphical visualizations of data
+                        </span>
+                    </code>
+                    <br></br>
+                    <code className="code">
+                        <span className="python-system">import</span> numpy{" "}
+                        <span className="python-system">as</span> np{" "}
+                        <span className="comment">
+                            # Facilitates complex mathematical operations and
+                            processes
+                        </span>
+                    </code>
+                    <br></br>
+                    <code className="code">
+                        <span className="python-system">import</span> scipy{" "}
+                        <span className="comment">
+                            # Facilitates complex scientific operations and
+                            processes
+                        </span>
+                    </code>
+                    <br></br>
+                    <code className="code">
+                        <span className="python-system">import</span> astropy{" "}
+                        <span className="comment">
+                            # Facilitates complex astronomical operations and
+                            processes
+                        </span>
+                    </code>
+                    <br></br>
+                    <code className="code">
+                        <span className="python-system">import</span> sklearn{" "}
+                        <span className="comment">
+                            # Features many machine learning tools (regression,
+                            clustering, classification)
+                        </span>
+                    </code>
+                    <br></br>
+                    <code className="code">
+                        <span className="python-system">import</span> pandas{" "}
+                        <span className="python-system">as</span> pd{" "}
+                        <span className="comment">
+                            # Used for data import/export, manipulation, and
+                            analysis
+                        </span>
+                    </code>
+                    <br></br>
+                    <code className="code">
+                        <span className="python-system">import</span> astroquery{" "}
+                        <span className="comment">
+                            # Querying tool for astronomical data.
+                        </span>
+                    </code>
+                </pre>
                 <div className="text-content">
                     <b>Step 2 - Data Collection</b>
                     <br></br>
