@@ -1,6 +1,41 @@
 import Navbar from "/components/Navbar.js";
 import Sun from "/components/Sun.js";
 import Footer from "/components/Footer.js";
+import LazyLoad from "react-lazyload";
+
+function Picture({ rawpicture, name, size }) {
+    if (rawpicture != null) {
+        if (size != null) {
+            return (
+                <div className="picture-frame">
+                    <LazyLoad once={true}>
+                        <img
+                            className={"background-picture " + size}
+                            src={rawpicture}
+                            alt={name}
+                        />
+                    </LazyLoad>
+                    <div className="media-title">{name}</div>
+                </div>
+            );
+        } else {
+            return (
+                <div className="picture-frame">
+                    <LazyLoad once={true}>
+                        <img
+                            className="background-picture"
+                            src={rawpicture}
+                            alt={name}
+                        />
+                    </LazyLoad>
+                    <div className="media-title">{name}</div>
+                </div>
+            );
+        }
+    } else {
+        return <br></br>;
+    }
+}
 
 function Results() {
     return (
@@ -9,53 +44,65 @@ function Results() {
             <Navbar back="true" />
             <div className="text-wrapper">
                 <div className="title">Results</div>
-                <p>
-                    Our universe is far from the quiet, dark, mysterious place
-                    it may appear to be. Every single star we see in the night
-                    sky is, In fact, loud. Stars are very large bubbles of hot
-                    gas driven by convection processes due to the movement of
-                    hot and cold gases. These convection currents cause
-                    differences in pressure and temperature throughout the star,
-                    causing oscillation waves throughout the star’s interior.
-                    Depending on the pressure/temperature, the oscillations
-                    operate at different frequencies and create various pitches.
-                    We humans are not able to directly hear this sound, but we
-                    are capable of viewing byproducts of the sound-causing
-                    oscillations - the luminosity and surface velocity of the
-                    star.
-                </p>
-                <iframe
-                    className="youtube"
-                    src="https://www.youtube.com/embed/H-Ci_YwfH04"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen></iframe>
-                <p className="video_title">The Sound of Stars - NASA, 2019</p>
-                <div className="subtitle">Luminosity & Surface Velocity</div>
-                <p>
-                    The surface velocity of a star contains key information
-                    regarding its internal oscillations. These oscillations,
-                    following the laws of convection, bounce around inside the
-                    star and create pressure differences on the surface.
-                    Consequently, the surface velocity across the star differs.
-                    So, by tracking the changes in this surface velocity over
-                    time, vital information regarding the internal oscillations
-                    is found. However, there is one major caveat with using
-                    surface velocity. Since surface velocity data is a visibly
-                    small aspect of a star, we are constrained to only
-                    collecting data from the Sun.
-                    <br></br>
-                    <br></br>
-                    To determine the internal oscillations of distant stars, we
-                    must rely on luminosity - a measure of the intrinsic
-                    brightness of a star and overall energy output. It is a
-                    great indicator of the internal oscillations since these
-                    oscillations alter the star’s overall energy. Time series
-                    star luminosity measurements are already provided by space
-                    telescopes like Kepler and TESS, allowing for derivation of
-                    internal oscillations of stars many light years away.
-                </p>
+                <div className="text-content">
+                    The first major milestone in our project is the creation of
+                    a functional machine learning model capable of correlating
+                    oscillation modes to stellar activity. Out of the many
+                    networks we attempted, a Feed-Forward Dense Neural Network
+                    (DNN) provided us with optimal results. After fine tuning
+                    hyperparameters within this model, we constructed 6 layers
+                    with nodes cascading from 2048 to 1 node per layer. A
+                    simplified form of this neural network structure is
+                    displayed below.
+                </div>
+                <Picture
+                    rawpicture="/images/results/network.png"
+                    name="Feed-forward Neural Network Structure, Simplified"
+                />
+                <Picture
+                    rawpicture="/images/results/trend.png"
+                    name="Correlation of Predicted Solar Activity (Blue and Red) to Detected Sunspot Number (Green)"
+                />
+                {/* <div className="subtitle"></div> */}
+                <div className="text-content">
+                    However, our model was solely trained on data from the Sun.
+                    To truly claim that our model is able to predict stellar
+                    activity, it must be applied to distant stars. Other studies
+                    predicting the stellar activity of distant stars, such as
+                    Mathur et al. (2014), are limited in their range and come
+                    from a purely theoretical basis without a data-driven
+                    backbone. Nevertheless, by applying our model to a star
+                    analyzed by Mathur and her team (who used wavelet analysis),
+                    we see that the peaks and troughs align throughout the
+                    observed time period, indicating an agreement in both
+                    models. Our model has proven to be effective on both the Sun
+                    and distant stars, so mass application is now possible.
+                </div>
+                <Picture
+                    rawpicture="/images/results/correlation.png"
+                    name="Stellar Activity of KIC 7206837 - Our Prediction (Red), Mathur et al. Prediction (Purple)"
+                />
+                <div className="text-content">
+                    In the 3 Variable Star graphs, the stellar activity trends
+                    are very chaotic, which can be attributed to the variable
+                    nature of those stars. On the contrary, the Hot Subdwarf
+                    graphs are not variable and have periods of very low solar
+                    activity. This behavior can be attributed to the old age of
+                    the star, where it begins to fuse heavier elements and is
+                    not as reactive.
+                </div>
+                <div className="text-content">
+                    The main takeaway from this is that our model provides
+                    consistent stellar activity trends across all stars of a
+                    specific type, allowing us to characterize the type of star
+                    solely from its light curve.In the future, our model can be
+                    applied onto a vast number of stars with the purpose of
+                    classification and characterization. Understanding stellar
+                    activity similarities between our Sun and other stars is
+                    vital in the search for habitable planets, marking this
+                    research a monumental step forward in the astrophysical and
+                    machine learning community.
+                </div>
                 <div className="footer_wrapper">
                     <Footer />
                 </div>
