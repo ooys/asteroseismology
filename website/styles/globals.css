@@ -264,3 +264,21 @@ body::-webkit-scrollbar {
     color: orange;
     transition: all 0.3s;
 }
+
+/* Special */
+.codeblock {
+    background-color: #ffffff;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 3vw;
+    border-style: solid;
+}
+.python-system {
+    color: blue;
+}
+.code {
+    color: black;
+}
+.comment {
+    color: green;
+}
