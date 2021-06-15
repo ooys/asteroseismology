@@ -9,7 +9,7 @@ function Abstract() {
             <Navbar back="true" />
             <div className="text-wrapper">
                 <div className="title">Abstract</div>
-                <p>
+                <div className="text-content">
                     This project presents a novel technique to predict solar
                     magnetic activity of distant stars through asteroseismic
                     analysis and machine learning algorithms. Asteroseismology,
@@ -45,7 +45,7 @@ function Abstract() {
                     exoplanet habitability and surface conditions. The use of a
                     machine learning model improves prediction accuracy and
                     provides scalability when compared to present methods.
-                </p>
+                </div>
                 <div className="footer_wrapper">
                     <Footer />
                 </div>
