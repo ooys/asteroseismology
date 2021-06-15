@@ -17,14 +17,16 @@ function Home() {
                         <div className="columns">
                             <div className="column is-mobile">
                                 <div className="header">
-                                    <div className="title">Solar Activity</div>
+                                    <div className="title">
+                                        Stellar Activity Prediction
+                                    </div>
                                     <hr></hr>
                                     <a
                                         className="subtitle"
                                         onClick={() =>
-                                            router.push("/background")
+                                            router.push("/abstract")
                                         }>
-                                        And why we should care. {"      "}
+                                        An Overview. {"      "}
                                         <span className="icon">
                                             <FontAwesomeIcon
                                                 className="chevron fa-xs"
@@ -49,7 +51,7 @@ function Home() {
                     <div className="section is-large" id="purpose">
                         <div className="header centered">
                             <div className="title centered">
-                                "Hearing" Stars
+                                The Symphony of Stars
                             </div>
                             <hr></hr>
                             <br className="is-hidden-touch"></br>
@@ -60,7 +62,7 @@ function Home() {
                             <a
                                 className="subtitle centered"
                                 onClick={() => router.push("/background")}>
-                                Across the Universe.{"      "}
+                                Have a Listen.{"      "}
                                 <span className="icon">
                                     <FontAwesomeIcon
                                         className="chevron fa-xs"
@@ -70,15 +72,81 @@ function Home() {
                         </div>
                     </div>
                     <div className="section is-large" id="method">
-                        <div>Our Techniques</div>
+                        <div className="columns">
+                            <div className="column"></div>
+                            <div className="column is-mobile">
+                                <div className="header">
+                                    <div className="title ">
+                                        Behind the Scenes
+                                    </div>
+                                    <hr></hr>
+                                    <a
+                                        className="subtitle"
+                                        onClick={() => router.push("/method")}>
+                                        Methods & Techniques. {"      "}
+                                        <span className="icon">
+                                            <FontAwesomeIcon
+                                                className="chevron fa-xs"
+                                                icon={
+                                                    faChevronRight
+                                                }></FontAwesomeIcon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="section is-large" id="results">
-                        <div>Our Results</div>
+                        <div className="columns">
+                            <div className="column is-mobile">
+                                <div className="header">
+                                    <div className="title ">The Future</div>
+                                    <div className="subtitle">
+                                        of Planetary Habitability Research
+                                    </div>
+                                    <hr></hr>
+                                    <a
+                                        className="subtitle"
+                                        onClick={() => router.push("/results")}>
+                                        Our Results. {"      "}
+                                        <span className="icon">
+                                            <FontAwesomeIcon
+                                                className="chevron fa-xs"
+                                                icon={
+                                                    faChevronRight
+                                                }></FontAwesomeIcon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="column"></div>
+                        </div>
                     </div>
 
                     <div className="section is-large" id="contacts">
-                        <div>Data and Collaborations</div>
+                        <div className="columns">
+                            <div className="column is-mobile">
+                                <div className="header centered">
+                                    <div className="title cetered">
+                                        Development Team
+                                    </div>
+                                    <hr></hr>
+                                    <a
+                                        className="subtitle centered"
+                                        onClick={() => router.push("/about")}>
+                                        Contact Us. {"      "}
+                                        <span className="icon">
+                                            <FontAwesomeIcon
+                                                className="chevron fa-xs"
+                                                icon={
+                                                    faChevronRight
+                                                }></FontAwesomeIcon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Footer />
