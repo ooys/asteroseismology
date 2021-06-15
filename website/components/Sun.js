@@ -69,6 +69,7 @@ function Sun() {
                 camera.position.x = camX + frame * 0.1;
                 camera.position.y = camY + frame * 0.2;
                 camera.position.z = camZ + frame * 5;
+                camera.rotation.x = 0;
                 camera.rotation.y = frame * -0.1;
                 ambientLight.intensity = frame * 2;
             }
@@ -76,18 +77,21 @@ function Sun() {
                 camera.position.x = camX + 0.1 + (frame - 1) * 0.2;
                 camera.position.y = camY + 0.2 + (frame - 1) * -0.5;
                 camera.position.z = camZ + 5 + (frame - 1) * -3;
+                camera.rotation.x = 0;
                 camera.rotation.y = -0.1 + (frame - 1) * -0.8;
             }
             if (frame > 2 && frame <= 3) {
                 camera.position.x = camX + 0.1 + 0.2 + (frame - 2) * 0;
                 camera.position.y = camY + 0.2 - 0.5 + (frame - 2) * 0.8;
                 camera.position.z = camZ + 5 - 3 + (frame - 2) * -3.5;
+                camera.rotation.x = 0;
                 camera.rotation.y = -0.1 - 0.8 + (frame - 2) * -0.3;
             }
             if (frame > 3 && frame <= 4) {
                 camera.position.x = camX + 0.1 + 0.2 + (frame - 3) * 0;
                 camera.position.y = camY + 0.2 - 0.5 + 0.8 + (frame - 3) * 0.1;
                 camera.position.z = camZ + 5 - 3 + -3.5;
+                camera.rotation.x = 0;
                 camera.rotation.y = -0.1 - 0.8 + -0.3 + (frame - 3) * -1.5;
             }
             if (frame > 4 && frame <= 5) {
