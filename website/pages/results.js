@@ -45,8 +45,18 @@ function Results() {
             <div className="text-wrapper">
                 <div className="title">Results</div>
                 <div className="text-content">
-                    The first major milestone in our project is the creation of
-                    a functional machine learning model capable of correlating
+                    <br></br>
+                    <b>
+                        Data and result interpretation was completed in
+                        collaboration with Dr. Thierry Appourchaux, who provided
+                        insight through theoretical physics during private
+                        commuication in 2021. (Appourchaux 2021, private
+                        communication)
+                    </b>
+                    <br></br>
+                    <br></br>
+                    major milestone in our project is the creation of a
+                    functional machine learning model capable of correlating
                     oscillation modes to stellar activity. Out of the many
                     networks we attempted, a Feed-Forward Dense Neural Network
                     (DNN) provided us with optimal results. After fine tuning
