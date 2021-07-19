@@ -131,12 +131,17 @@ function Method() {
                 <div className="text-content">
                     <b>Step 2 - Data Collection</b>
                     <br></br>
-                    Surface velocity and luminosity data (independent variable)
-                    was downloaded from the Birmingham Solar Oscillations
-                    Network (BiSON) and Luminosity Oscillations Imager (LOI),
-                    respectively. Both of these are representations of internal
-                    oscillations, so both are used to train the machine learning
-                    model to get a more well-rounded estimate.
+                    Surface velocity (independent variable) data of the sun was
+                    downloaded from the Birmingham Solar Oscillations Network
+                    (BiSON). Solar Luminosity data was recorded by Luminosity
+                    Oscillations Imager (LOI){" "}
+                    <a href="https://doi.org/10.1023/A:1004999005915">
+                        (Appourchaux, 1997)
+                    </a>{" "}
+                    and provided by <a href="/about">Dr. Thierry Appourchaux</a>
+                    . Both data are representations of internal oscillations, so
+                    both are used to train the machine learning model to get a
+                    more well-rounded estimate.
                 </div>
                 <Picture
                     rawpicture="/images/method/virgo.png"
