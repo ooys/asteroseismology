@@ -42,6 +42,7 @@ function Home() {
                                     <div>Astrophysics Research Project</div>
                                     <div>Yihong Song, Rohit Prasanna (US)</div>
                                     <div>Narim Kim, Haesol Yoon (KR)</div>
+                                    <div>Thierry Appourchaux (FR)</div>
                                     <div>June, 2021</div>
                                 </div>
                             </div>
