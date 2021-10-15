@@ -43,6 +43,9 @@ function Background() {
             <Sun />
             <Navbar back="true" />
             <div className="text-wrapper">
+                <div className="text-content">
+                    <a href="astero.vercel.app">Star Classification through Machine Learning and Asteroseismology</a>
+                    <a href="astero.vercel.app">Solar Flare Intensity Prediction of Stellar Objects</a>
                 <div className="title">Background</div>
                 <div className="subtitle">
                     Stellar Activity: Dependent Variable
