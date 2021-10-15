@@ -82,7 +82,7 @@ function Hidden({ active }) {
                 <a
                     className="column"
                     onClick={() => router.push("/background")}>
-                    Background (Updated!)
+                    Background
                 </a>
                 <a className="column" onClick={() => router.push("/method")}>
                     Method
