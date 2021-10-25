@@ -63,8 +63,8 @@ function Background() {
                     These magnetic fields, which can be found visually through the sunspots they create, vary in intensity. 
                 </div>
                 <Picture
-                    rawpicture="/images/background/solardanger.gif"
-                    name="Light Curve from a Distant Star (KIC 10963065)"
+                    rawpicture="/images/background/sunspot.png"
+                    name="Image of Sunspot with Magnetic Fields"
                 />
                 <div className="text-content">
                     CMEs, on the other hand, have magnetic reconnections in a star’s corona. 
