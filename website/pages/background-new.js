@@ -53,11 +53,6 @@ function Background() {
                 In fact, the sunspots that we see harbor these magnetic fields and connect with each other. 
                 Occasionally, these interactions tend to become violent and release massive amounts of 
                 energy in what we know as “space weather”. 
-                </div>
-                <Picture
-                    rawpicture="/images/background/flare.gif"
-                    name="Magnetic Activity Induced Solar Flare"
-                />
                 <div className="subtitle">
                 Solar Flares and Coronal Mass Ejections
                 </div>
@@ -66,18 +61,31 @@ function Background() {
                 Solar flares are caused by the intertwining of magnetic fields (known as reconnection) in a star’s chromosphere. 
                 These magnetic fields, which can be found visually through the sunspots they create, vary in intensity. 
                 </div>
+                </div>
+                <Picture
+                    rawpicture="/images/background/flare.gif"
+                    name="Magnetic Activity Induced Solar Flare"
+                />
                 <div className="text-content">
                 CMEs, on the other hand, have magnetic reconnections in a star’s corona. 
                 While CMEs and solar flares often accompany each other, they differ in their fundamental processes. 
                 Solar flares are generally smaller than CMEs and are essentially energy-filled flashes of light. 
                 CMEs are lightbulb-shaped and emit tons of plasma and energized particles away from the Sun, directly towards Earth.
                 </div>
+                <Picture
+                    rawpicture="/images/background/cme.png"
+                    name="Reach of a Coronal Mass Ejection"
+                />
                 <div className="subtitle">
                 Implications
                 </div>
                 <div className="text-content">
                 <strong>Earth Applications</strong>
                 </div>
+                <Picture
+                    rawpicture="/images/background/solardanger.png"
+                    name="Dangers of Solar Flares and CMEs"
+                />
                 <div className="text-content">
                 Ejections directly pose a danger to Earth’s satellites and electrical system. 
                 In 2012, a Carrington-level CME missed Earth by a near 9 days. 
@@ -87,6 +95,10 @@ function Background() {
                 <div className="text-content">
                 <strong>Distant Applications</strong>
                 </div>
+                <Picture
+                    rawpicture="/images/background/light_curve.png"
+                    name="Light Curve from a Distant Star (KIC 10963065)"
+                />
                 <div className="text-content">
                 Both solar flares and CMEs are known to emit massive amounts of radiation out from the Sun. 
                 The Earth’s magnetic field is capable of resisting this, which is one of the reasons we’re still alive. 
@@ -103,6 +115,10 @@ function Background() {
                 Each wavelength views the mechanics of the Sun at its different layers (e.g. chromosphere, photosphere, corona). 
                 By analyzing the Sun through different wavelengths, we can look for features that indicate the formation of a solar flare and/or coronal mass ejection to predict it early.
                 </div>
+                <Picture
+                    rawpicture="/images/background/sdo_images.png"
+                    name="Light Curve from a Distant Star (KIC 10963065)"
+                />
                 <div className="footer_wrapper">
                     <Footer />
                 </div>
