@@ -88,6 +88,10 @@ function Background() {
                 Had it hit, scientists estimate global electrical damage to be about $1.6 trillion. 
                 Additionally, it would take about 7 years to recover from such a disaster. 
                 </div>
+                <Picture
+                    rawpicture="/images/background/solardanger.gif"
+                    name="Light Curve from a Distant Star (KIC 10963065)"
+                />
                 <div className="text-content">
                 <strong>Distant Applications</strong>
                 </div>
