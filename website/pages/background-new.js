@@ -48,24 +48,20 @@ function Background() {
                     Stellar Activity
                 </div>
                 <div className="text-content">
-                The stellar activity of stars is a measure of how magnetically active a star is. 
-                The surface of every star contains several magnetic fields, all interacting with each other. 
-                In fact, the sunspots that we see harbor these magnetic fields and connect with each other. 
-                Occasionally, these interactions tend to become violent and release massive amounts of 
-                energy in what we know as “space weather”. 
+                    The stellar activity of stars is a measure of how magnetically active a star is. 
+                    The surface of every star contains several magnetic fields, all interacting with each other. 
+                    In fact, the sunspots that we see harbor these magnetic fields and connect with each other. 
+                    Occasionally, these interactions tend to become violent and release massive amounts of 
+                    energy in what we know as “space weather”. 
                 <div className="subtitle">
-                Solar Flares and Coronal Mass Ejections
+                    Solar Flares and Coronal Mass Ejections
                 </div>
                 <div className="text-content">
-                Major violent eruptions on stars (types of space weather) can be classified under two major phenomena: solar flares and CMEs. 
-                Solar flares are caused by the intertwining of magnetic fields (known as reconnection) in a star’s chromosphere. 
-                These magnetic fields, which can be found visually through the sunspots they create, vary in intensity. 
+                    Major violent eruptions on stars (types of space weather) can be classified under two major phenomena: solar flares and CMEs. 
+                    Solar flares are caused by the intertwining of magnetic fields (known as reconnection) in a star’s chromosphere. 
+                    These magnetic fields, which can be found visually through the sunspots they create, vary in intensity. 
                 </div>
                 </div>
-                <Picture
-                    rawpicture="/images/background/flare.gif"
-                    name="Magnetic Activity Induced Solar Flare"
-                />
                 <div className="text-content">
                 CMEs, on the other hand, have magnetic reconnections in a star’s corona. 
                 While CMEs and solar flares often accompany each other, they differ in their fundamental processes. 
