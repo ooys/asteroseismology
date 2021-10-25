@@ -83,7 +83,7 @@ function Background() {
                 <strong>Earth Applications</strong>
                 </div>
                 <Picture
-                    rawpicture="/images/background/solardanger.png"
+                    rawpicture="/images/background/solardanger.gif"
                     name="Dangers of Solar Flares and CMEs"
                 />
                 <div className="text-content">
