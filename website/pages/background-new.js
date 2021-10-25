@@ -62,11 +62,15 @@ function Background() {
                     Solar flares are caused by the intertwining of magnetic fields (known as reconnection) in a star’s chromosphere. 
                     These magnetic fields, which can be found visually through the sunspots they create, vary in intensity. 
                 </div>
+                <Picture
+                    rawpicture="/images/background/solardanger.gif"
+                    name="Light Curve from a Distant Star (KIC 10963065)"
+                />
                 <div className="text-content">
-                CMEs, on the other hand, have magnetic reconnections in a star’s corona. 
-                While CMEs and solar flares often accompany each other, they differ in their fundamental processes. 
-                Solar flares are generally smaller than CMEs and are essentially energy-filled flashes of light. 
-                CMEs are lightbulb-shaped and emit tons of plasma and energized particles away from the Sun, directly towards Earth.
+                    CMEs, on the other hand, have magnetic reconnections in a star’s corona. 
+                    While CMEs and solar flares often accompany each other, they differ in their fundamental processes. 
+                    Solar flares are generally smaller than CMEs and are essentially energy-filled flashes of light. 
+                    CMEs are lightbulb-shaped and emit tons of plasma and energized particles away from the Sun, directly towards Earth.
                 </div>
                 <Picture
                     rawpicture="/images/background/cme.png"
@@ -88,10 +92,6 @@ function Background() {
                 Had it hit, scientists estimate global electrical damage to be about $1.6 trillion. 
                 Additionally, it would take about 7 years to recover from such a disaster. 
                 </div>
-                <Picture
-                    rawpicture="/images/background/solardanger.gif"
-                    name="Light Curve from a Distant Star (KIC 10963065)"
-                />
                 <div className="text-content">
                 <strong>Distant Applications</strong>
                 </div>
