@@ -54,14 +54,18 @@ function Background() {
                     create a time series dataset known as a light curve.
                 </div>
                 <Picture
-                    rawpicture="/images/background/flare.gif"
-                    name="Magnetic Activity Induced Solar Flare"
+                    rawpicture="/images/background-new/kepler.jpg"
+                    name="Kepler Solar Telescope"
                 />
                 <div className="text-content">
                     Although the main purpose was to detect transit events,
                     these light curves were also used by astrophysists to
                     approximate star characteristics.
                 </div>
+                <Picture
+                    rawpicture="/images/background-new/kepler-lightcurve.png"
+                    name="Normal (Long) Kepler Light Curve"
+                />
                 <div className="text-content">
                     The dataset has light curves for around 200,000 distant
                     stars. They have been mostly labeled by spectroscopy or
@@ -69,12 +73,19 @@ function Background() {
                     dataset - around 3200 stars - has no classification due to
                     short light curves or missing data.
                 </div>
+                <Picture
+                    rawpicture="/images/background-new/short-lightcurve.png"
+                    name="Short Kepler Light Curve"
+                />
                 <div className="text-content">
                     Current machine learning techniques on star classifications
                     are limited, with the highest accuracy being 74% by Hinners
                     et Al., 2018, who used LSTM-RNN and feature extraction.
                 </div>
-
+                <Picture
+                    rawpicture="/images/background-new/kepler-labels.png"
+                    name="Kepler Dataset Labels"
+                />
                 <div className="subtitle">Asteroseismology</div>
                 <div className="text-content">
                     Stars are driven by convection forces, in which large
@@ -88,6 +99,10 @@ function Background() {
                     viewing byproducts of the oscillations - the fluctuation of
                     brightness in the star.
                 </div>
+                <Picture
+                    rawpicture="/images/background-new/oscillation.gif"
+                    name="Internal Oscillations of Star"
+                />
                 <div className="text-content">
                     Asteroseismologsts analyze light curves with mathematical
                     formulae to predict the energy oscillations in stars. Having
@@ -98,9 +113,13 @@ function Background() {
 
                 <div className="subtitle">Shazam</div>
                 <div className="text-content">
-                    Shazam is an app that analyses the sound of a song to find
+                    Shazam is an app that analyzes the sound of a song to find
                     the name of the song from its dataset.
                 </div>
+                <Picture
+                    rawpicture="/images/background-new/shazam-logo.svg"
+                    name="Shazam Logo"
+                />
                 <div className="subtitle">Shazam: How it Learns</div>
                 <div className="text-content">
                     The program splits song into several 4-second-long sections.
@@ -111,6 +130,18 @@ function Background() {
                     the song. When combined, the signatures become the entire
                     fingerprint of the song as a whole.
                 </div>
+                <Picture
+                    rawpicture="/images/background-new/shazam-procedure.png"
+                    name="Shazam Procedure"
+                />
+                <Picture
+                    rawpicture="/images/background-new/shazam-fourier.png"
+                    name="Fourier Transformed Signals"
+                />
+                <Picture
+                    rawpicture="/images/background-new/shazam-fingerprints.png"
+                    name="Shazam Song Fingerprints"
+                />
                 <div className="subtitle">Shazam: How it Predicts</div>
                 <div className="text-content">
                     The program samples 4-second digital signals of song. For
@@ -120,7 +151,25 @@ function Background() {
                     make a prediction on the potential song title.
                 </div>
                 <div className="subtitle">Shazam vs. Asteroseismology</div>
-                <div className="subtitle">Purpose</div>
+                <Picture
+                    rawpicture="/images/background-new/bison-lightcurve1.png"
+                    name="Light Curve Sample"
+                />
+                <Picture
+                    rawpicture="/images/background-new/bison-lightcurve2.png"
+                    name="Light Curve Sample, Fourier Transformed"
+                />
+                <div className="subtitle">Procedure</div>
+                <div className="text-content">
+                    <ul>
+                        <li>Part 1: Replicate (Hinners et al., 2018)</li>
+                        <li>Part 2: Improve Classification with StarZam</li>
+                        <li>
+                            Part 3: Complete Unfinished Kepler Datasets (3200
+                            out of 200000 stars)
+                        </li>
+                    </ul>
+                </div>
                 <div className="subtitle">Implications</div>
                 <div className="text-content">
                     <ul>
@@ -161,17 +210,6 @@ function Background() {
                             There is currently not many ML researches in
                             classifying Kepler datasets. Most related works are
                             in supernovae classification projects.
-                        </li>
-                    </ul>
-                </div>
-                <div className="subtitle">Procedure</div>
-                <div className="text-content">
-                    <ul>
-                        <li>Part 1: Replicate (Hinners et al., 2018)</li>
-                        <li>Part 2: Improve Classification with StarZam</li>
-                        <li>
-                            Part 3: Complete Unfinished Kepler Datasets (3200
-                            out of 200000 stars)
                         </li>
                     </ul>
                 </div>
