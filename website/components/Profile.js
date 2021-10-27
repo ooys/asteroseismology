@@ -92,6 +92,24 @@ function Github({ rawgithub }) {
     }
 }
 
+function Linkedin({ rawlinkedin }) {
+    if (rawlinkedin != null) {
+        return (
+            <div className="column">
+                <a target="_blank" rel="noopener noreferrer" href={rawlinkedin}>
+                    <span className="icon">
+                        <FontAwesomeIcon
+                            className="fa-lg"
+                            icon={fab.faLinkedin}></FontAwesomeIcon>
+                    </span>
+                </a>
+            </div>
+        );
+    } else {
+        return null;
+    }
+}
+
 function Profile({
     name,
     position,
@@ -101,6 +119,7 @@ function Profile({
     email,
     discord,
     github,
+    linkedin,
 }) {
     return (
         <div className="column is-half-widescreen is-half-desktop ">
@@ -115,9 +134,10 @@ function Profile({
                 </div>
                 <div className="is-profile-contact">
                     <div className="columns is-profile-contact-columns is-centered is-mobile">
+                        <Linkedin rawlinkedin={linkedin} />
+                        <Github rawgithub={github} />
                         <Email rawemail={email} />
                         <Discord rawdiscord={discord} />
-                        <Github rawgithub={github} />
                     </div>
                 </div>
             </div>
