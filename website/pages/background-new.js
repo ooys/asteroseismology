@@ -48,6 +48,45 @@ function Background() {
                     Learning and Asteroseismology
                 </div>
                 <div className="title">Background</div>
+                <div className="subtitle">Shazam</div>
+                <div className="text-content">
+                    Shazam is an app that analyzes the sound of a song to find
+                    the name of the song from its dataset.
+                </div>
+                <Picture
+                    rawpicture="/images/background-new/shazam-logo.svg"
+                    name="Shazam Logo"
+                />
+                <div className="subtitle">Shazam: How it Learns</div>
+                <div className="text-content">
+                    The program splits song into several 4-second-long sections.
+                    A Fourier Transform is used to turn each section from
+                    Amplitude vs. Time to Magnitude vs. Fequency. Within each
+                    interval, the frequency with the highest magnitude is
+                    recorded. This creates a signature for the specific chunk of
+                    the song. When combined, the signatures become the entire
+                    fingerprint of the song as a whole.
+                </div>
+                <Picture
+                    rawpicture="/images/background-new/shazam-procedure.png"
+                    name="Shazam Procedure"
+                />
+                <Picture
+                    rawpicture="/images/background-new/shazam-fourier.png"
+                    name="Fourier Transformed Signals"
+                />
+                <Picture
+                    rawpicture="/images/background-new/shazam-fingerprints.png"
+                    name="Shazam Song Fingerprints"
+                />
+                <div className="subtitle">Shazam: How it Predicts</div>
+                <div className="text-content">
+                    The program samples 4-second digital signals of song. For
+                    each section, a Fourier Transform is completed and the
+                    frequency with the highest magnitude is recorded. The values
+                    is compared with the millions of stored song fingerprints to
+                    make a prediction on the potential song title.
+                </div>
                 <div className="subtitle">Kepler Space Telescope</div>
                 <div className="text-content">
                     The Kepler Space Telescope observed changes in brightness of
@@ -115,45 +154,6 @@ function Background() {
                     astronomers with extremely accurate data.
                 </div>
 
-                <div className="subtitle">Shazam</div>
-                <div className="text-content">
-                    Shazam is an app that analyzes the sound of a song to find
-                    the name of the song from its dataset.
-                </div>
-                <Picture
-                    rawpicture="/images/background-new/shazam-logo.svg"
-                    name="Shazam Logo"
-                />
-                <div className="subtitle">Shazam: How it Learns</div>
-                <div className="text-content">
-                    The program splits song into several 4-second-long sections.
-                    A Fourier Transform is used to turn each section from
-                    Amplitude vs. Time to Magnitude vs. Fequency. Within each
-                    interval, the frequency with the highest magnitude is
-                    recorded. This creates a signature for the specific chunk of
-                    the song. When combined, the signatures become the entire
-                    fingerprint of the song as a whole.
-                </div>
-                <Picture
-                    rawpicture="/images/background-new/shazam-procedure.png"
-                    name="Shazam Procedure"
-                />
-                <Picture
-                    rawpicture="/images/background-new/shazam-fourier.png"
-                    name="Fourier Transformed Signals"
-                />
-                <Picture
-                    rawpicture="/images/background-new/shazam-fingerprints.png"
-                    name="Shazam Song Fingerprints"
-                />
-                <div className="subtitle">Shazam: How it Predicts</div>
-                <div className="text-content">
-                    The program samples 4-second digital signals of song. For
-                    each section, a Fourier Transform is completed and the
-                    frequency with the highest magnitude is recorded. The values
-                    is compared with the millions of stored song fingerprints to
-                    make a prediction on the potential song title.
-                </div>
                 <div className="subtitle">Shazam vs. Asteroseismology</div>
                 <Picture
                     rawpicture="/images/background-new/bison-lightcurve1.png"
