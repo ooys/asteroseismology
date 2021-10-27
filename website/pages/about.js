@@ -24,6 +24,7 @@ function About() {
                             email="michaelsong4399@gmail.com"
                             discord="michaelsong4399#2750"
                             github="https://github.com/michaelsong4399"
+                            linkedin="https://www.linkedin.com/in/yihongs/"
                         />
                         <Profile
                             name="Rohit Prasanna"
@@ -34,6 +35,7 @@ function About() {
                             email="rohit.prasanna1@gmail.com"
                             discord="goopfrey#3844"
                             github="https://github.com/ropunch04"
+                            linkedin="https://www.linkedin.com/in/rohit-prasanna-28b578203/"
                         />
                         <Profile
                             name="Narim Kim"
