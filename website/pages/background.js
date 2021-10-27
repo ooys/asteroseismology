@@ -44,10 +44,7 @@ function Background() {
             <Navbar back="true" />
             <div className="text-wrapper">
                 <div className="subtitle">
-                    <a href="astero.vercel.app">Star Classification through Machine Learning and Asteroseismology</a>
-                </div>
-                <div className="subtitle">
-                    <a href="astero.vercel.app">Prediction of Solar Flare Intensity for Stellar Objects</a>
+                    <a href="/background-new">New Research</a>
                 </div>
                 <div className="title">Background</div>
                 <div className="subtitle">
