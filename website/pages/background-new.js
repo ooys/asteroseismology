@@ -43,6 +43,10 @@ function Background() {
             <Sun />
             <Navbar back="true" />
             <div className="text-wrapper">
+                <div className="title">
+                    StarZam - Stellar Light Curve Classification with Machine
+                    Learning and Asteroseismology
+                </div>
                 <div className="title">Background</div>
                 <div className="subtitle">Kepler Space Telescope</div>
                 <div className="text-content">
